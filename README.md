@@ -18,6 +18,7 @@ O desafio consistiu em construir uma API REST que valida se uma senha atende aos
 - Não possuir caracteres repetidos dentro do conjunto
 
 **Input:** Uma senha (string).
+
 **Output:** Um boolean indicando se a senha é válida.
 
 ## Solução e Decisões Técnicas
@@ -30,7 +31,7 @@ Seguindo boas práticas de design de API, métodos como POST, PUT e PATCH devem 
 >   &nbsp;&nbsp;&nbsp;&nbsp; "password" : "AedfS$!32" <br>
 >}
 
-**Output:** O retorno também é um objeto JSON. Essa abordagem facilita a evolução da API: caso seja necessário incluir novos campos de retorno no futuro (como uma mensagem de erro detalhada), não quebramos a integração com os clientes existentes.
+**Output:** O retorno também é um objeto JSON. Essa abordagem facilita a evolução da API: caso seja necessário incluir novos campos de retorno no futuro (como uma mensagem de erro detalhada), não quebramos a integração com os clientes existentes. Isso também é uma boa prática de design de API
 
 > { <br>
 >   &nbsp;&nbsp;&nbsp;&nbsp; "isValid" : true <br>
