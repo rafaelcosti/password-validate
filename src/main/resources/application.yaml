@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: itau-password-validate
+
+server:
+  port: 8080
+
+itau.password:
+  business:
+    rules:
+      password:
+        length: ${LENGTH:9}
+        lower.case.number: ${LOWER_CASE_NUMBER:1}
+        upper.case.number: ${UPPER_CASE_NUMBER:1}
+        digit.number: ${DIGIT_NUMBER:1}
+        special.character: ${SPECIAL_CHARACTER:!@#$%^&*()-+}
